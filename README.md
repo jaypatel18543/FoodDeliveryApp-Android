@@ -5,18 +5,18 @@ This is a Food Delivery Application built in Android Studio using Java and Fireb
 PROJECT STRUCTURE
 
 FoodDeliveryApp-Android/
- ├── app/
- │   ├── src/
- │   │   ├── main/
- │   │   │   ├── java/com/yourpackage/   → Java files (MainActivity, Fragments, Adapters, etc.)
- │   │   │   ├── res/
- │   │   │   │   ├── layout/            → XML UI files (activity_main.xml, fragment_profile.xml, etc.)
- │   │   │   │   ├── drawable/          → Images & icons
- │   │   │   │   ├── values/            → strings.xml, colors.xml, themes.xml
- │   │   │   └── AndroidManifest.xml
- │   ├── build.gradle
- ├── settings.gradle
- └── README.md
+  app/
+  src/
+  main/
+  java/com/yourpackage/   → Java files (MainActivity, Fragments, Adapters, etc.)
+  res/
+  layout/ → XML UI files (activity_main.xml, fragment_profile.xml, etc.)
+  drawable/          → Images & icons
+  values/            → strings.xml, colors.xml, themes.xml
+  AndroidManifest.xml
+  build.gradle
+  settings.gradle
+  README.md
  
 Important Files
 MainActivity.java → app/src/main/java/com/yourpackage/MainActivity.java
