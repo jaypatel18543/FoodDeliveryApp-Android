@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "181863702270",
+    "firebase_url": "https://fooddeliveryapk-2efcc-default-rtdb.firebaseio.com",
+    "project_id": "fooddeliveryapk-2efcc",
+    "storage_bucket": "fooddeliveryapk-2efcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181863702270:android:49293f6c8650cf8bc38faf",
+        "android_client_info": {
+          "package_name": "com.example.fooddeliveryapk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv4e_201nAeen6Kv9E-QHYVwZI-hGRcl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

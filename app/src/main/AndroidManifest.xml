@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Fooddeliveryapk"
+        tools:targetApi="31">
+        <activity
+            android:name=".file_paths"
+            android:exported="false" />
+        <activity
+            android:name=".chef_postDish"
+            android:exported="false" />
+        <activity
+            android:name=".DeliverySendOtp"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryFoodPanel1_BottomNavigation"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryVerifyPhone"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerFoodPanel1_BottomNavigation"
+            android:exported="false" />
+        <activity
+            android:name=".sendOtp"
+            android:exported="false" />
+        <activity
+            android:name=".VerifyPhone"
+            android:exported="false" />
+        <activity
+            android:name=".ChefSendOtp"
+            android:exported="false" />
+        <activity
+            android:name=".ChefFoodPanel1_BottomNavigation"
+            android:exported="false" />
+        <activity
+            android:name=".ChefForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenu"
+            android:exported="false" />
+        <activity
+            android:name=".ChefVerifyPhone"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".Deliveryloginphone"
+            android:exported="false" />
+        <activity
+            android:name=".Deliverylogin"
+            android:exported="false" />
+        <activity
+            android:name=".Registration"
+            android:exported="false" />
+        <activity
+            android:name=".Loginphone"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".ChefRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".Chefloginphone"
+            android:exported="false" />
+        <activity
+            android:name=".Cheflogin"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseOne"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

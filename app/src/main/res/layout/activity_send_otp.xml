@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sendOtp">
+
+    <LinearLayout
+        android:id="@+id/LLayout"
+        android:layout_width="386dp"
+        android:layout_height="635dp"
+        android:background="@drawable/rect"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textju"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter OTP"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="monospace"
+            android:textStyle="italic"/>
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="OTP"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/Verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#16CC1D"
+            android:text="Verify"
+            android:textSize="18sp"
+            app:cornerRadius="1dp" />
+
+        <Button
+            android:id="@+id/resendotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resend OTP"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            app:cornerRadius="1dp"
+            android:backgroundTint="#FF9800" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

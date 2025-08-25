@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="351dp"
+        android:layout_height="455dp"
+        android:background="@drawable/rect"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/idemaIl"
+            android:layout_width="330dp"
+            android:layout_height="67dp"
+            app:passwordToggleEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emaIl"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="5dp"
+                android:hint="Email"
+                android:inputType="text|textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Paswordfgh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleDrawable="@drawable/baseline_disabled_visible_24"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:hint="Password"
+                android:inputType="text|textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgotpasswrd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Forgot Password?"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#1B591D"
+            android:text="LOGIN"
+            android:textSize="18sp"
+            app:cornerRadius="1dp" />
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Don't have an Account? Create One"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <TableRow
+                android:id="@+id/hrry"
+                android:layout_width="140dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#090909" />
+
+            <TextView
+                android:id="@+id/Orry"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="OR"
+                android:textAlignment="center"
+                android:textColor="#090909" />
+
+            <TableRow
+                android:id="@+id/drry"
+                android:layout_width="140dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#090909" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/signphoneno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Sign In With"
+            android:textAlignment="center"
+            android:textColor="#090909"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnphoneno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#A84120"
+            android:drawableLeft="@drawable/baseline_local_phone_24"
+            android:drawablePadding="8dp"
+            android:text="Phone" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
